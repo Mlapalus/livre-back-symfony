@@ -1,4 +1,6 @@
 {
+    "name": "lveh/backend",
+    "description": "backend with symfony",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "stable",
