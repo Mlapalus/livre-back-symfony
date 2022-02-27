@@ -1,6 +1,6 @@
 {
-    "type": "project",
-    "license": "proprietary",
+    "type": "library",
+    "license": "MIT",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
