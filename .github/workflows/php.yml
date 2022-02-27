@@ -25,3 +25,6 @@ jobs:
         bin/phpunit tests/
     - name: PHPStan Static Analysis
       run: vendor/bin/phpstan
+
+    - name: PHPCS Fixer
+      run: vendor/bin/phpcs
