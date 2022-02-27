@@ -24,7 +24,7 @@ jobs:
       run: |
         backend/livre-hero-back/bin/phpunit backend/livre-hero-back/tests/
     - name: PHPStan Static Analysis
-        uses: php-actions/phpstan@v2
-        with:
-          configuration: backend/livre-hero-back/phpstan.neon
-          memory_limit: 256M
+      uses: php-actions/phpstan@v2
+      with:
+        configuration: backend/livre-hero-back/phpstan.neon
+        memory_limit: 256M
