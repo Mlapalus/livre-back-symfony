@@ -1,4 +1,13 @@
 {
+    "composer/pcre": {
+        "version": "3.0.0"
+    },
+    "composer/semver": {
+        "version": "3.2.9"
+    },
+    "composer/xdebug-handler": {
+        "version": "3.0.3"
+    },
     "doctrine/annotations": {
         "version": "1.13",
         "recipe": {
@@ -77,6 +86,18 @@
     "egulias/email-validator": {
         "version": "3.1.2"
     },
+    "friendsofphp/php-cs-fixer": {
+        "version": "3.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "be2103eb4a20942e28a6dd87736669b757132435"
+        },
+        "files": [
+            ".php-cs-fixer.dist.php"
+        ]
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
     },
@@ -89,6 +110,12 @@
     "myclabs/deep-copy": {
         "version": "1.10.2"
     },
+    "nette/neon": {
+        "version": "v3.3.2"
+    },
+    "nette/utils": {
+        "version": "v3.2.7"
+    },
     "nikic/php-parser": {
         "version": "v4.13.2"
     },
@@ -97,6 +124,9 @@
     },
     "phar-io/version": {
         "version": "3.2.1"
+    },
+    "php-cs-fixer/diff": {
+        "version": "v2.0.2"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
@@ -112,6 +142,21 @@
     },
     "phpstan/phpdoc-parser": {
         "version": "1.2.0"
+    },
+    "phpstan/phpstan": {
+        "version": "1.4.6"
+    },
+    "phpstan/phpstan-deprecation-rules": {
+        "version": "1.0.0"
+    },
+    "phpstan/phpstan-doctrine": {
+        "version": "1.2.11"
+    },
+    "phpstan/phpstan-phpunit": {
+        "version": "1.0.0"
+    },
+    "phpstan/phpstan-symfony": {
+        "version": "1.1.7"
     },
     "phpunit/php-code-coverage": {
         "version": "9.2.13"
@@ -215,6 +260,21 @@
         },
         "files": [
             "config/packages/sensio_framework_extra.yaml"
+        ]
+    },
+    "slam/phpstan-extensions": {
+        "version": "v6.0.0"
+    },
+    "squizlabs/php_codesniffer": {
+        "version": "3.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.6",
+            "ref": "1019e5c08d4821cb9b77f4891f8e9c31ff20ac6f"
+        },
+        "files": [
+            "phpcs.xml.dist"
         ]
     },
     "symfony/asset": {
@@ -560,6 +620,36 @@
     },
     "symfony/yaml": {
         "version": "v6.0.3"
+    },
+    "symplify/astral": {
+        "version": "10.1.0"
+    },
+    "symplify/autowire-array-parameter": {
+        "version": "10.1.0"
+    },
+    "symplify/composer-json-manipulator": {
+        "version": "10.1.0"
+    },
+    "symplify/easy-testing": {
+        "version": "10.1.0"
+    },
+    "symplify/package-builder": {
+        "version": "10.1.0"
+    },
+    "symplify/phpstan-rules": {
+        "version": "10.1.0"
+    },
+    "symplify/rule-doc-generator-contracts": {
+        "version": "10.1.0"
+    },
+    "symplify/smart-file-system": {
+        "version": "10.1.0"
+    },
+    "symplify/symplify-kernel": {
+        "version": "10.1.0"
+    },
+    "thecodingmachine/phpstan-strict-rules": {
+        "version": "v1.0.0"
     },
     "theseer/tokenizer": {
         "version": "1.2.1"

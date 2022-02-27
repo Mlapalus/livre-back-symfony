@@ -8,9 +8,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
 
@@ -20,8 +18,13 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
-    # - name: Run test suite
-    #   run: composer run-script test
+    - name: Execute tests (Unit and Feature tests) via PHPUnit
+      env:
+        DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
+      run: |
+        backend/livre-hero-back/bin/phpunit backend/livre-hero-back/tests/
+    - name: PHPStan Static Analysis
+        uses: php-actions/phpstan@v2
+        with:
+          configuration: backend/livre-hero-back/phpstan.neon
+          memory_limit: 256M
