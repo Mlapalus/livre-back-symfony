@@ -22,9 +22,9 @@ jobs:
       env:
         DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
       run: |
-        backend/livre-hero-back/bin/phpunit backend/livre-hero-back/tests/
+        bin/phpunit tests/
     - name: PHPStan Static Analysis
       uses: php-actions/phpstan@v2
       with:
-        configuration: backend/livre-hero-back/phpstan.neon
+        configuration: phpstan.neon
         memory_limit: 256M
