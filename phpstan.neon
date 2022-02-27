@@ -12,7 +12,7 @@ parameters:
   reportUnmatchedIgnoredErrors: false
   checkMissingCallableSignature: true
   paths:
-    - ../domain
+    - domain
     - src
     - tests
   excludePaths:
