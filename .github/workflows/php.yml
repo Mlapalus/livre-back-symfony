@@ -23,8 +23,10 @@ jobs:
         DATABASE_URL: sqlite:///%kernel.project_dir%/data/database.sqlite
       run: |
         bin/phpunit tests/
-    - name: PHPStan Static Analysis
-      run: vendor/bin/phpstan
+    - name: linter
+      run: |
+            vendor/bin/phpstan
+            bin/console lint:container
 
     - name: PHPCS Fixer
       run: vendor/bin/phpcs --standard=PSR12 src tests/domain domain
