@@ -5,5 +5,5 @@ lint:
 	bin/console lint:container
 	vendor/bin/phpcs --standard=PSR12 src tests/domain domain
 
-test-unit:
-	bin/phpunit tests/
+tests-unit:
+	bin/phpunit

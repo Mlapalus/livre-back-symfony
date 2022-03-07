@@ -1,4 +1,7 @@
 {
+    "beberlei/assert": {
+        "version": "v3.3.2"
+    },
     "composer/pcre": {
         "version": "3.0.0"
     },
